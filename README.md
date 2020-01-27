@@ -2,6 +2,8 @@
 
 ## DATA 150 
 
-## Larry Feng
+### Larry Feng
 
 This is an introduction to the course DATA 150, Evolving Solutions.
+
+[Blumenstock Response]
