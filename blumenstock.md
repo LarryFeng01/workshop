@@ -17,3 +17,6 @@ The solutions given by these tools often give more to the rich than to the poor.
 ###### Ways Forward
 
 Validate. "New sources of data should complement, not replace, old ones" (Blumenstock). New tools should compare with existing tools, or rather benchmarked, to see which is more effective. Customize. The technology used is mostly for first-world purpose; searching something on Google and onl relevant searches in your area show up. But what if that algorithm can also do something for non first-world countries? Deepen collaboration. The future solutions should not be left in the hands of those who just know the algorithms, but the ones who understand the problems and context. One example is Datakind, a global network that tries to connect data scientists to "social-change" organizations, which focuses on issues in emerging economies.
+
+###### What is Big Data?
+
