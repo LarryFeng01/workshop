@@ -10,7 +10,7 @@ This is a catalog of work for the course DATA 150, Evolving Solutions.
 
 ## Projects
 
-1.
+1. 
 
 ## Assignments
 
