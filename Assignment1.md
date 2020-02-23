@@ -1,7 +1,7 @@
-###### Larry Feng
-###### Assignment 1
-###### DATA 150
-###### 23 February, 2020
+##### Larry Feng
+##### Assignment 1
+##### DATA 150
+##### 23 February, 2020
 
 ### Problem Statement
 
