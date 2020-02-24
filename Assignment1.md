@@ -2,6 +2,7 @@
 ##### Assignment 1
 ##### DATA 150
 ##### 23 February, 2020
+##### 2058 words
 
 ### Problem Statement
 
