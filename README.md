@@ -8,7 +8,8 @@ This is a catalog of work for the course DATA 150, Evolving Solutions.
 
 1. [Blumenstock Response](https://larryfeng01.github.io/workshop/blumenstock) Jan 27, 2020
 2. [Jahan and Rosling Videos](https://larryfeng01.github.io/workshop/Jahan&Rosling) Feb 3, 2020
-3. [Anderson and Kitchin](https://larryfeng01.github.io/workshop/Anderson&Kitchin) Feb 24, 2020
+3. [Barder Questions](https://larryfeng01.github.io/workshop/Barder) Feb 17, 2020
+4. [Anderson and Kitchin](https://larryfeng01.github.io/workshop/Anderson&Kitchin) Feb 24, 2020
 
 ## Projects
 
