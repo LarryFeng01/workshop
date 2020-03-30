@@ -11,7 +11,7 @@ This is a catalog of work for the course DATA 150, Evolving Solutions.
 3. [Barder Questions](https://larryfeng01.github.io/workshop/Barder) Feb 17, 2020
 4. [Anderson and Kitchin](https://larryfeng01.github.io/workshop/Anderson&Kitchin) Feb 24, 2020
 5. [Stevens et al.](https://larryfeng01.github.io/workshop/StevensResponse) Mar 25, 2020
-6. [Nieves et al.] (https://larryfeng01.github.io/workshop/NievesResponse) March 30, 2020
+6. [Nieves et al.](https://larryfeng01.github.io/workshop/NievesResponse) March 30, 2020
 
 ## Projects
 
