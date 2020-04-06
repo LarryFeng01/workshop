@@ -1,13 +1,8 @@
-##### Larry Feng
-##### Assignment 2
-##### DATA 150
-##### 5 April, 2020
-##### 2664 words
-
 ### Using Small Area Estimation and Machine Learning for Improved Poverty Assessments throughout Ethiopia and Eastern Africa 
 <p align="center">
   <b>by Larry Feng</b><br>
   <b>April 5, 2020</b><br>
+  <b>2664 words</b><br>
 </p>
 
 ### Introduction
