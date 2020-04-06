@@ -34,9 +34,76 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The data science methods I will be looking at are Small Area Estimation and Random Forest technique. First, Small Area Estimation (SAE) has been gaining popularity among development practitioners worldwide. [9] In the SAE method, consumption levels are imputed for each household in the population census based on a consumption model estimated from a survey. The consumption model must include explanatory variables, household and individual. Applying the estimated coefficients to these same variables in the census data, the consumption expenditures can be credited to each household. Then, poverty for small areas can be predicted based on this accredited per capita consumption. One of the advantages of SAE is that it not only estimates “poverty incidence”, but it also produces predictions of standard errors on the estimates. Because the poverty estimates are produced based on the imputed consumption, there will definitely be “imputation errors”, and they will be revealed in the standard error. SAE has two stages: first, we use an equation with the log per capita consumption expenditures, *ln y<sub>ch</sub>*,
 
 <p align="center">
-  ln y<sub>ch</sub> = X'<sub>ch</sub>β + Z'γ + u<sub>ch</sub>
+  <i>ln y<sub>ch</sub> = X'<sub>ch</sub>β + Z'γ + u<sub>ch</sub></i>
 </p>
 
 where X'<sub>ch</sub> is the vector of explanatory variables for household *h* in the cluster *c*. β is the vector of associated regression coefficients, Z' is the vector of location specific variables with γ as the associated vector of coefficients, and *u<sub>ch</sub>* is the regression disturbances due to the discrepancy between the predicted household consumption and the actual value. The estimates from SAE can be validated by comparing the numbers estimated with the data itself. In this case, the data is retrieved from the Bhutan Living Standard Survey. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/58920498/78520384-5ef1ee00-7794-11ea-9a7b-c65f226c64f5.png">
+</p>
+<p align="center">
+  [9] <i>The World Bank</i>. (2010, June). Small Area Estimation of Poverty in Rural Bhutan.
+</p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ‘key’ variables in the graph correspond to the BLSS data, representative of the district level. Presumably, if the underlying assumption that homogeneity and stability from 2005 to 2007 do not hold, there is little reason to anticipate estimates from the SAE method to be similar to the data itself. Conversely, if the SAE method produces a superb predictor of “true poverty incidence”, it would be relatively similar to the BLSS data.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Second, the Random Forest (RF) model which stems from machine learning algorithms. RF often produces higher accuracy poverty predictions, particularly at the urban and rural levels, as compared to the national level. But, RF is an automated tool, one that requires a low level of knowledge to operate, and it performs just as well or even better than classical statistical methods. The RF method is exactly what the name is: a multitude of trees that can be called a forest. It consists of decision trees, and each tree contains a number of decision nodes. Inside each node, data is split according to how well the variable can predict poverty. To keep it simple, RF can be split into a few steps:
+
+1. Split the data in half, leaning and evaluation sample
+2. Draw a random sample of two-thirds the observations with replacement for each tree from the ‘learning’ data set
+3. Grow a tree:
+   * For every node in the tree, take a random sample of √n, where n is the total number of variables.
+   * Select the variable used for splitting in each node with the lowest entropy (disturbance)
+   * Grow each tree until a split leads to fewer than 4 observations in each leaf
+4. Repeat steps 2 and 3 a few hundred times. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Based on the couple hundred of trees, the output is the “score function” that a household is calculated to be in poverty or not. So, each tree predicts the status for a household. According to *World Bank*, Random Forest is a good predictor of poverty, and sometimes it is better than current methods. It is not the most accurate method, but it is more robust and does not make large prediction errors. Overall, Random Forest is a simple, automated method to take advantage of and can be used as a complement to other methods. [10]
+
+### Discussion 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At this point in my research, I feel like I have a more complete understanding of the definition of poverty and how it relates to human development. In addition, each data science method by itself can be weak and produce dissatisfactory results. With a single method, the results can be clouded in errors and can not be used by other people to make accurate predictions on the subject. But with both methods complementing each other, they can fill up where the other falls short. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I believe that there will always be a gap in the research. It is just not possible for a research project to cover absolutely everything that could have an impact on poverty in the world. There are also cases in which factors that we think affect the issue do not actually impact it at all, but we do not possess any research or the means to produce the research to disprove it. But, I do think one gap in most researches on this subject is the lack of poverty mapping. Recent studies are highlighting the importance of geography and spatial data as determinants of poverty. Yet most of recent research is limited to elementary and one-dimensional characterizations of the roles of regions and access to different types of infrastructure, public services, and markets. Many poverty mapping exercises just simply rank areas by a level of poverty or marginality indicator and completely disregard the use for maps. [1] My research question produced from my analysis in this literature review is whether Small Area Estimation Technique and Random Forest Model is effective, cheaper, faster, and able to stay relevant compared to other current methods on poverty assessments in developing countries.  
+
+### References
+
+[1] Girma, A. (2012, June 1). Remote Sensing and GIS Based Poverty Mapping Small- Area Estimation Approach in Rural Oromiya Regional State. Retrieved February 13, 2020, from 
+[http://etd.aau.edu.et/handle/123456789/5098](http://etd.aau.edu.et/handle/123456789/5098)
+
+[2] Husmann, C. (2015, November 3). Marginality as a Root Cause of Poverty: Identifying Marginality Hotspots in Ethiopia. Retrieved February 13, 2020, from 
+[https://www.sciencedirect.com/science/article/pii/S0305750X15002466](https://www.sciencedirect.com/science/article/pii/S0305750X15002466)
+
+[3] Schmidt, E., & Kedir, M. (2009, October). Urbanization and Spatial Connectivity in Ethiopia: Urban Growth Analysis Using GIS. Retrieved February 13, 2020, from 
+[http://ebrary.ifpri.org/utils/getfile/collection/p15738coll2/id/130941/filename/131152.pdf](http://ebrary.ifpri.org/utils/getfile/collection/p15738coll2/id/130941/filename/131152.pdf)
+
+[4] Diao, X., & Pratt, A. N. (2006, July 13). Growth options and poverty reduction in Ethiopia – An economy-wide model analysis. Retrieved February 13, 2020, from 
+[https://reader.elsevier.com/reader/sd/pii/S0306919206000716?token=69C3F3D358B3D796CBEAA298AF6085D12A8D1DBE13E421830CEC237FAF63B8612EF2634F84F0309C9ECBD7499EC38C3E](https://reader.elsevier.com/reader/sd/pii/S0306919206000716?token=69C3F3D358B3D796CBEAA298AF6085D12A8D1DBE13E421830CEC237FAF63B8612EF2634F84F0309C9ECBD7499EC38C3E)
+
+[5] Wagaw, M., Coleman, T. L., Tsegaye, T. D., & Tadasse, W. (2005, April 23). GIS Implementation to Support Poverty Reduction Policy and Drought Management in Ethiopia. Retrieved February 13, 2020, from 
+
+[http://repository.uneca.org/bitstream/handle/10855/3606/Bib-28799.pdf?sequence=1](http://repository.uneca.org/bitstream/handle/10855/3606/Bib-28799.pdf?sequence=1)
+
+[6] Brown, C., & Ravallion, M., & Walle, D. (2016, December). A Poor Means Test? Econometric Targeting in Africa. Retrieved March 29, 2020, from
+
+[https://www.nber.org/papers/w22919.pdf](https://www.nber.org/papers/w22919.pdf)
+
+[7] Graw, V., & Ladenburger, C. (2012, January). Mapping Marginality Hotspots – Geographical Targeting for Poverty Reduction. Retrieved March 29, 2020, from
+
+[https://www.zef.de/fileadmin/user_upload/wp88.pdf](https://www.zef.de/fileadmin/user_upload/wp88.pdf)
+
+[8] Bigsten, A., & Kebede, B., & Shimeles, A., & Taddesse, M. (2003, January). Growth and Poverty Reduction in Ethiopia: Evidence from Household Panel Surveys. Retrieved March 28, 2020, from
+
+[https://www.economics.handels.gu.se/digitalAssets/1378/1378647_ethiopia-wd-2002.pdf](https://www.economics.handels.gu.se/digitalAssets/1378/1378647_ethiopia-wd-2002.pdf)
+
+[9] The World Bank. (2010, June). Small Area Estimation of Poverty in Rural Bhutan. Retrieved March 28, 2020, from
+
+[https://openknowledge.worldbank.org/bitstream/handle/10986/12348/681790ESW0WHIT0erty0in0Rural0Bhutan.pdf?sequence=1&isAllowed=y](https://openknowledge.worldbank.org/bitstream/handle/10986/12348/681790ESW0WHIT0erty0in0Rural0Bhutan.pdf?sequence=1&isAllowed=y)
+
+[10] Sohnesen, T., & Stender, N. (2016, March). Is Random Forest a Superior Methodology for Predicting Poverty? An Empirical Assessment. Retrieved March 28, 2020, from
+
+[http://documents.shihang.org/curated/zh/777401467987858907/pdf/WPS7612.pdf](http://documents.shihang.org/curated/zh/777401467987858907/pdf/WPS7612.pdf)
+
+[11] Halfon, N. (2016, April). Poverty, Complexity, and a New Way Forward. Retrieved March 29, 2020, from
+
+[https://www.academicpedsjnl.net/article/S1876-2859(16)00034-6/fulltext](https://www.academicpedsjnl.net/article/S1876-2859(16)00034-6/fulltext)
