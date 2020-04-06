@@ -20,3 +20,4 @@ This is a catalog of work for the course DATA 150, Evolving Solutions.
 ## Assignments
 
 1. [Assignment 1](https://larryfeng01.github.io/workshop/Assignment1) Feb 23, 2020
+2. [Assignment 2](https://larryfeng01.github.io/workshop/Assignment2) April 5, 2020
