@@ -1,0 +1,25 @@
+### Data Techniques of Predicting Poverty Throughout Ethiopia and Eastern Africa 
+<p align="center">
+  <b>by Larry Feng</b><br>
+  <b>April 19, 2020</b><br>
+  <b>1884 words</b><br>
+</p>
+
+### Introduction
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Poverty has been an ongoing issue in the world for as long as anyone can remember. As the world and countries develop, the poverty line has been driven down; however, the poverty rate can never be driven down to zero percent. In addition, poverty is especially prevalent in Ethiopia with numbers around seventy to eighty percent of the population living in some type of poverty [2,3]. As the citizens continue living in poverty, many issues arise, such as: inadequate access to health care, tight living spaces, unclean household areas, food security, susceptibility to disease, and below average household incomes. The inherency of poverty can come from a plethora of factors, but some of the ones discussed seem to focus on agriculture. Most studies conclude that if agricultural methods were improved such that food shortages can be cut; the poverty rate could be driven down. But what is poverty? As mentioned by Girma, “there is no agreed international definition of poverty” [1]. The author states that poverty can take on many forms that one might not even realize, such as: hunger, lack of shelter, being sick and not having access to doctor, no access to school, illiteracy, not having a job, fear of what’s to come in the future, living each day as a struggle. Poverty is powerlessness, a lack of representation and freedom. By the definition of government, poverty is whether one’s consumption or income level falls below the minimum level necessary to meet basic needs, called the “poverty line”. Each country, however, has different basic needs and different minimum income levels, so these poverty lines vary in time and place. In general, poverty mapping information is a “means to any persuasive framework” [1]. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The geospatial data science techniques I have decided to focus on is Small Area Estimation and Random Forest Model. I will further explain these techniques later in more detail throughout the methodological investigation. My research question produced from my previous analysis is whether Small Area Estimation Technique and Random Forest Model is effective, cheaper, faster, and able to stay relevant compared to other current methods on poverty assessments in developing countries. Small Area Estimation Technique is a newer statistical model used to predict poverty in lower income countries. It is increasing its popularity since it is currently the most effective statistical model while keeping funds into account. Of course, there exist better, more accurate methods, but Small Area Estimation (SAE) is known for using census/survey data and trying to keep costs low. The other method is Random Forest Technique. Random Forest Technique (RF) is a machine learning method that doesn’t adhere to statistical methods. It evolves along with bigger data, becoming more accurate with larger amounts of data. RF technique can be used for predictions of long, disordered regions in protein sequences, classification of agricultural practices based on satellite imagery, spatially distributed measurements of environmental conditions, and segmentation of video objects [10]. It is noted in Sohnesen that RF is usually applied to areas of research relating to medical literature, but not really in economics literature. In addition, the method has a better ability to predict because of its handling with non-linearities; this method, however, does not seem to hold its own when dealing with linear variables. 
+
+### Inquiry Type
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This research question is evaluative since it wishes to find the most effective technique/method for predicting poverty. The purpose is to research the two methods, find the advantages of each while also considering their disadvantages. In the end, the two methods will be compared to reveal which is better for a lower-middle income country to use. Additional questions for this inquiry are: how much does the accuracy fall when using outdated census data? How many countries can this research be applied to? How do governments affect the running of poverty assessments? 
+
+### Methods
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First, Small Area Estimation (SAE) has been gaining popularity among development practitioners worldwide [9]. SAE is known for taking its data from census data, which has plenty of flaws, mainly inaccuracy. There is not much of a point to conduct a poverty assessment of Ethiopia in 2020 using 2007 census data because we would be predicting the past. Below is a figure where Girma analyses data and chooses which source is the most effective.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
