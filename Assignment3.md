@@ -35,7 +35,7 @@
 where X'<sub>ch</sub> is the vector of explanatory variables for household *h* in the cluster *c*. β is the vector of associated regression coefficients, Z' is the vector of location specific variables with γ as the associated vector of coefficients, and *u<sub>ch</sub>* is the regression disturbances due to the discrepancy between the predicted household consumption and the actual value. There are a couple of variations in regard to the statistical equation, but most researchers use a variation of the equation above with similar variables. The estimates from SAE can be validated by comparing the numbers estimated with the data itself. In this case, the data is retrieved from the Bhutan Living Standard Survey. 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/58920498/78520384-5ef1ee00-7794-11ea-9a7b-c65f226c64f5.png">
+  <img src="https://user-images.githubusercontent.com/58920498/79700666-6d94d680-8265-11ea-895b-3f238c41b463.png">
 </p>
 <p align="center">
   Figure 2:<i>The World Bank</i>. (2010, June). Small Area Estimation of Poverty in Rural Bhutan.
@@ -64,12 +64,12 @@ where X'<sub>ch</sub> is the vector of explanatory variables for household *h* i
   <img src="https://user-images.githubusercontent.com/58920498/79700595-c4e67700-8264-11ea-9d07-832684d482de.png">
 </p>
 <p align="center">
-  Figure 4: Example of classification tree with three predictors(X<sub>1...X<sub>3) with two classes and five partitions(R<sub>1…R<sub>5)
+  Figure 4: Example of classification tree with three predictors(X<sub>1</sub>...X<sub>3</sub>) with two classes and five partitions(R<sub>1</sub>...R<sub>5</sub>)
 </p>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unfortunately, I don’t have a figure for the random forest model to explain the method clearer. But if we look at this example of a classification tree in figure 4, it might help visualize this method. The two advantages of this tree are the graphic interpretability, in which it is easier to understand compared to statistical methods. Another is their performance with “highly non-linear decision boundaries”. But the disadvantage is that the tree is subject to variance. If a miniscule change were to occur in the data, the whole tree could transform to something entirely different. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Based on the couple hundred of trees, the output is the “score function” that a household is calculated to be in poverty or not. So, each tree predicts the status for a household. According to World Bank, Random Forest is a good predictor of poverty, and sometimes it is better than current methods. It is not the most accurate method, but it is more robust and does not make large prediction errors. Overall, Random Forest is a simple, automated method to take advantage of and can be used as a complement to other methods. [10]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Based on the couple hundred of trees, the output is the “score function” that a household is calculated to be in poverty or not. So, each tree predicts the status for a household. According to *World Bank*, Random Forest is a good predictor of poverty, and sometimes it is better than current methods. It is not the most accurate method, but it is more robust and does not make large prediction errors. Overall, Random Forest is a simple, automated method to take advantage of and can be used as a complement to other methods. [10]
 
 ### Discussion
 
