@@ -40,7 +40,7 @@
 where X'<sub>ch</sub> is the vector of explanatory variables for household *h* in the cluster *c*. β is the vector of associated regression coefficients, Z' is the vector of location specific variables with γ as the associated vector of coefficients, and *u<sub>ch</sub>* is the regression disturbances due to the discrepancy between the predicted household consumption and the actual value. The estimates from SAE can be validated by comparing the numbers estimated with the data itself. In this case, the data is retrieved from the Bhutan Living Standard Survey. 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/58920498/78520384-5ef1ee00-7794-11ea-9a7b-c65f226c64f5.png">
+  <img src="https://user-images.githubusercontent.com/58920498/79700666-6d94d680-8265-11ea-895b-3f238c41b463.png">
 </p>
 <p align="center">
   [9] <i>The World Bank</i>. (2010, June). Small Area Estimation of Poverty in Rural Bhutan.
